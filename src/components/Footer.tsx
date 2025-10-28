@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter, Tiktok } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -36,14 +36,21 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-foreground">
+              <a href="https://www.instagram.com/_threads.lk_?igsh=MWxubGFtdzd0bnZsOA==" className="text-muted-foreground hover:text-foreground">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground">
+              <a href="facebook.com/share/14JV5Mqxifx/?mibextid=wwXIfr" className="text-muted-foreground hover:text-foreground">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground">
-                <Twitter className="h-5 w-5" />
+               <a href="https://www.tiktok.com/@threads3080?_t=ZS-90uy7SQMX5U&_r=1" className="text-muted-foreground hover:text-foreground">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 256"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path d="M210 80a64 64 0 0 1-38-12v58a74 74 0 1 1-74-74h6v30a44 44 0 1 0 44 44V24h28a64 64 0 0 0 34 56Z" />
+                </svg>
               </a>
             </div>
           </div>
