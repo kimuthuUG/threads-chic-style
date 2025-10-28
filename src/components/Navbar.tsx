@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { useCart } from "@/context/CartContext";
 import { useTheme } from "@/context/ThemeContext";
 import { Badge } from "@/components/ui/badge";
+import blackLogo from "@/assets/logoB.png"
+import whiteLogo from "@/assets/logoW.png"
 
 const Navbar = () => {
   const { cartCount } = useCart();
@@ -22,8 +24,12 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-bold tracking-tight">
-            THREADS
+          <Link to="/" className="flex items-center">
+            <img
+              src={theme === "light" ? blackLogo : whiteLogo}
+              alt="Threads Logo"
+              className="h-8 w-auto md:h-10 transition-all duration-300"
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
